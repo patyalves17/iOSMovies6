@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AVKit
 
 class MovieViewController: UIViewController {
     
@@ -22,10 +24,23 @@ class MovieViewController: UIViewController {
     
     //Variável que receberá o filme selecionado na tabela
     var movie: Movie!
+    var moviePlayer: AVPlayer!
+    
+    var moviePlayerController: AVPlayerViewController!
+    
     
     // MARK: Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareVideo()
+        
+        
+        if UserDefaults.standard.bool(forKey: "autoplay") {
+            changeMovieStatus(play: true)
+        }
+        
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +57,28 @@ class MovieViewController: UIViewController {
         }
     }
     
+    func prepareVideo() {
+        let url = Bundle.main.url(forResource: "spiderman-trailer.mp4", withExtension: nil)!
+        moviePlayer = AVPlayer(url: url)
+        moviePlayerController = AVPlayerViewController()
+        moviePlayerController.player = moviePlayer
+        moviePlayerController.showsPlaybackControls = true
+        
+        moviePlayerController.view.frame = viTrailer.bounds
+        viTrailer.addSubview(moviePlayerController.view)
+        
+        
+    }
+    
+    func changeMovieStatus (play: Bool) {
+        viTrailer.isHidden = false
+        if play {
+            moviePlayer.play()
+        }else {
+            moviePlayer.pause()
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? MovieRegisterViewController {
             vc.movie = movie
@@ -55,6 +92,8 @@ class MovieViewController: UIViewController {
     
     // MARK: - Super Methods
     @IBAction func playVideo(_ sender: UIButton) {
+        sender.isHidden = true
+        changeMovieStatus(play: true)
     }
     
 }

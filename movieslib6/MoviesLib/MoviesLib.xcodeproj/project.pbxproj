@@ -53,6 +53,7 @@
 		AC70C4F81E743C94005E598A /* TheaterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4F71E743C94005E598A /* TheaterAnnotation.swift */; };
 		AC70C4FE1E748175005E598A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4FD1E748175005E598A /* WebViewController.swift */; };
 		AC9239F91F7F004800C93A11 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC9239F81F7F004800C93A11 /* music.mp3 */; };
+		AC9239FB1F7F0C1F00C93A11 /* spiderman-trailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC9239FA1F7F005100C93A11 /* spiderman-trailer.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -339,6 +340,7 @@
 				AC64CEE11E70C98E00FD5EFF /* kongskull-small.jpg in Resources */,
 				07780D521E6D860E00BC3630 /* Main.storyboard in Resources */,
 				AC64CED61E70C98E00FD5EFF /* arrival-wide.jpg in Resources */,
+				AC9239FB1F7F0C1F00C93A11 /* spiderman-trailer.mp4 in Resources */,
 				AC64CEE61E70C98E00FD5EFF /* logan-wide.jpg in Resources */,
 				AC64CEEA1E70C98E00FD5EFF /* rogueone-wide.jpg in Resources */,
 				AC64CED51E70C98E00FD5EFF /* arrival-small.jpg in Resources */,

@@ -34,6 +34,11 @@ class MoviesTableViewController: UITableViewController {
         backgroundMusicPlayer.play()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        backgroundMusicPlayer.stop()
+    }
+    
     func prepareMusic() {
         let url = Bundle.main.url(forResource: "music", withExtension: "mp3")!
         backgroundMusicPlayer = try! AVAudioPlayer(contentsOf: url)
