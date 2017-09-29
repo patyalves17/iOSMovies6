@@ -52,6 +52,7 @@
 		AC70C4F61E742784005E598A /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4F51E742784005E598A /* Theater.swift */; };
 		AC70C4F81E743C94005E598A /* TheaterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4F71E743C94005E598A /* TheaterAnnotation.swift */; };
 		AC70C4FE1E748175005E598A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70C4FD1E748175005E598A /* WebViewController.swift */; };
+		AC9239F91F7F004800C93A11 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC9239F81F7F004800C93A11 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,8 @@
 		AC70C4F51E742784005E598A /* Theater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
 		AC70C4F71E743C94005E598A /* TheaterAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheaterAnnotation.swift; sourceTree = "<group>"; };
 		AC70C4FD1E748175005E598A /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AC9239F81F7F004800C93A11 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		AC9239FA1F7F005100C93A11 /* spiderman-trailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "spiderman-trailer.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +237,8 @@
 		AC70C4F41E74236C005E598A /* data */ = {
 			isa = PBXGroup;
 			children = (
+				AC9239F81F7F004800C93A11 /* music.mp3 */,
+				AC9239FA1F7F005100C93A11 /* spiderman-trailer.mp4 */,
 				AC64CE821E70C8C600FD5EFF /* movies.json */,
 				AC70C4EE1E741D3A005E598A /* theaters.xml */,
 			);
@@ -337,6 +342,7 @@
 				AC64CEE61E70C98E00FD5EFF /* logan-wide.jpg in Resources */,
 				AC64CEEA1E70C98E00FD5EFF /* rogueone-wide.jpg in Resources */,
 				AC64CED51E70C98E00FD5EFF /* arrival-small.jpg in Resources */,
+				AC9239F91F7F004800C93A11 /* music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
